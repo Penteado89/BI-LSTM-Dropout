@@ -42,6 +42,7 @@ python test.py --model_path=best_model_True_0.25.h5
 
 #Resultados:
 O MELHOR MODELO identificado pode ser visualizado na imagem model_True_0 25.
+
 ![model_True_0 25](https://github.com/Penteado89/BI-LSTM-Dropout/assets/80430113/d5a159d8-a54e-4030-a582-39c8485fb515)
 
 Os valores de acurácia, após testar os seis modelos e avaliá-los no conjunto de teste, foram relativamente baixos. No entanto, eles foram comparáveis às referências dos melhores benchmarks para essa prática usando LSTM bidirecional.
