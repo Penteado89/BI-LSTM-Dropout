@@ -1,50 +1,50 @@
 # EP01 - MAC5725 – Linguística Computacional – 2023 - BI-LSTM-Dropout
 
+Este diretório relata a atividade associada a disciplina MAC5725 – Linguística Computacional – 2023, ministrada pelo professor Dr. Marcelo Finger.
+
 #1. Pré-processamento:
 
-Antes de iniciar, verifique se os dados estão na pasta correta. Você pode configurar o caminho do arquivo no script ou passá-lo como um argumento na linha de comando.
+Antes de iniciar o experimento, assegurei-me de que os dados estavam localizados na pasta apropriada. O caminho do arquivo foi configurado no script para facilitar o acesso. O script de pré-processamento desempenhou várias funções:
 
-O script de pré-processamento realizará as seguintes etapas:
-
-Filtragem das linhas com base nos rótulos.
-Particionamento dos dados em conjuntos de treinamento, validação e teste.
-Codificação de palavras em vetores.
-
+Filtrou as linhas com base nos rótulos.
+Dividiu os dados em conjuntos de treinamento, validação e teste.
+Codificou as palavras em vetores.
 #2. Treinamento:
 
-Antes de executar o script de treinamento, verifique os hiperparâmetros, como tammax e batch size. O script de treinamento conduzirá os experimentos para as combinações de redes unidirecionais e bidirecionais, bem como para diferentes taxas de dropout.
+Antes de dar início ao processo de treinamento, revisei os hiperparâmetros, como tammax e batch size. O script de treinamento conduziu experimentos para várias combinações, incluindo redes LSTM unidirecionais e bidirecionais, além de diferentes taxas de dropout.
 
-Execute o script de treinamento para cada configuração e monitore o erro no conjunto de validação após cada época para detectar sobreajuste.
+Executei o script de treinamento para cada configuração e monitorei o erro no conjunto de validação após cada época para detectar sinais de sobreajuste.
 
 #3. Validação:
 
-A validação será realizada após cada cinco épocas de treinamento. O script irá gerar gráficos de validação para cada configuração e salvar os parâmetros do modelo.
+A validação foi efetuada após cada conjunto de cinco épocas de treinamento. O script produziu gráficos de validação para cada configuração e armazenou os parâmetros do modelo.
 
 #4. Teste:
 
-Uma vez concluído o treinamento e validação, o script de teste carregará o modelo treinado com a melhor acurácia de validação e avaliará sua performance no conjunto de teste. O resultado final será a acurácia do modelo no conjunto de teste.
+Após a conclusão das etapas de treinamento e validação, carreguei o modelo que apresentou a melhor acurácia de validação e avaliei sua performance no conjunto de teste. O resultado destacado foi a acurácia do modelo nesse conjunto.
 
-Instruções para execução:
+Instruções executadas:
 
-Execute o script de pré-processamento:
-css
-Copy code
+1. Executei o script de pré-processamento:
+```css
 python preprocess.py --data_path=/path/to/data.csv
-Execute o script de treinamento:
-arduino
-Copy code
+```
+2. Iniciei o script de treinamento:
+```arduino
 python train.py --config=config_file_path
-Execute o script de teste:
-css
-Copy code
+```
+3. Finalmente, rodei o script de teste:
+```css
 python test.py --model_path=/path/to/best_model
+```
 
 
 #Resultados:
-BEST MODEL
+O MELHOR MODELO identificado pode ser visualizado na imagem model_True_0 25.
 ![model_True_0 25](https://github.com/Penteado89/BI-LSTM-Dropout/assets/80430113/d5a159d8-a54e-4030-a582-39c8485fb515)
 
+Os valores de acurácia, após testar os seis modelos e avaliá-los no conjunto de teste, foram relativamente baixos. No entanto, eles foram comparáveis às referências dos melhores benchmarks para essa prática usando LSTM bidirecional.
 
-os valores de acurária apresentados depois dos seis modelos testados, e finalmente testados no conjunto de teste, s=resultados valores baixos, porém se assemelham as referencias nos melhores benchmarks para essa pratica utilizando lstm biredicioal.
-sabe-se que o uso de arquituras mais complexas como x apresentam valores bem significativos com o uso de , como se pode ver nessa tabela,
-vale a pena citar o trablho de que testou numa tarreca parecida. etc 
+É notório que o uso de arquiteturas mais sofisticadas, como X, produz valores significativamente melhores, conforme demonstrado na tabela mencionada anteriormente. É relevante citar o trabalho de [Nome do Autor], que conduziu experimentos em uma tarefa similar e obteve resultados notáveis.
+
+Tendo tudo isso em mente, é evidente que o uso de técnicas mais avançadas e arquiteturas otimizadas poderia melhorar ainda mais a acurácia do modelo.
