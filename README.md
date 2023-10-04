@@ -1,14 +1,15 @@
 # EP01 - MAC5725 – Linguística Computacional – 2023 - BI-LSTM-Dropout
 
-Este diretório relata a atividade associada a disciplina MAC5725 – Linguística Computacional – 2023, ministrada pelo professor Dr. Marcelo Finger.
+Este diretório relata uma atividade de classificação de comentários através de LSTMs, a qual está associada a disciplina MAC5725 – Linguística Computacional – USP - 2023, ministrada pelo professor Dr. Marcelo Finger.
 
 #1. Pré-processamento:
 
 Antes de iniciar o experimento, assegurei-me de que os dados estavam localizados na pasta apropriada. O caminho do arquivo foi configurado no script para facilitar o acesso. O script de pré-processamento desempenhou várias funções:
 
-Filtrou as linhas com base nos rótulos.
-Dividiu os dados em conjuntos de treinamento, validação e teste.
-Codificou as palavras em vetores.
+Filtrar as linhas com base nos rótulos.
+Dividir os dados em conjuntos de treinamento, validação e teste.
+Codificar as palavras em vetores.
+
 #2. Treinamento:
 
 Antes de dar início ao processo de treinamento, revisei os hiperparâmetros, como tammax e batch size. O script de treinamento conduziu experimentos para várias combinações, incluindo redes LSTM unidirecionais e bidirecionais, além de diferentes taxas de dropout.
@@ -27,7 +28,7 @@ Instruções executadas:
 
 1. Executei o script de pré-processamento:
 ```css
-python preprocess.py --data_path=/path/to/data.csv
+python preprocess.py --data_path=B2W-Reviews01.csv
 ```
 2. Iniciei o script de treinamento:
 ```arduino
@@ -35,7 +36,7 @@ python train.py --config=config_file_path
 ```
 3. Finalmente, rodei o script de teste:
 ```css
-python test.py --model_path=/path/to/best_model
+python test.py --model_path=best_model_True_0.25.h5
 ```
 
 
