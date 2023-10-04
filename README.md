@@ -41,6 +41,9 @@ python test.py --model_path=/path/to/best_model
 
 
 #Resultados:
+BEST MODEL
+![model_True_0 25](https://github.com/Penteado89/BI-LSTM-Dropout/assets/80430113/d5a159d8-a54e-4030-a582-39c8485fb515)
+
 
 os valores de acurária apresentados depois dos seis modelos testados, e finalmente testados no conjunto de teste, s=resultados valores baixos, porém se assemelham as referencias nos melhores benchmarks para essa pratica utilizando lstm biredicioal.
 sabe-se que o uso de arquituras mais complexas como x apresentam valores bem significativos com o uso de , como se pode ver nessa tabela,
