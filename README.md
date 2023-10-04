@@ -2,44 +2,56 @@
 
 Este diretório relata uma atividade de classificação de comentários através de LSTMs, a qual está associada a disciplina MAC5725 – Linguística Computacional – USP - 2023, ministrada pelo professor Dr. Marcelo Finger.
 
-#1. Pré-processamento:
+Sentiment Analysis on B2W Reviews with LSTMs
+This repository provides code to conduct a sentiment analysis on reviews from B2W using Long Short-Term Memory networks (LSTMs). LSTMs are a type of recurrent neural network designed to work with sequence prediction problems.
 
-Antes de iniciar o experimento, assegurei-me de que os dados estavam localizados na pasta apropriada. O caminho do arquivo foi configurado no script para facilitar o acesso. O script de pré-processamento desempenhou várias funções:
+Data:
+The dataset consists of user reviews from the B2W platform. Some of the key features of the dataset are:
 
-Filtrar as linhas com base nos rótulos.
-Dividir os dados em conjuntos de treinamento, validação e teste.
-Codificar as palavras em vetores.
+Submission date
+Reviewer id
+Product id
+Product name
+Product brand
+Site category levels
+Review title
+Overall rating (from 1 to 5)
+Recommendation status
+Review text
+Reviewer birth year
+Reviewer gender
+Reviewer state
+Data Preprocessing:
+Loading and visualizing the raw data.
+Removing unnecessary columns, retaining only 'review_text' and 'overall_rating'.
+Handling missing values by dropping rows with missing 'review_text' or 'overall_rating'.
+Splitting the dataset into training, validation, and testing sets.
+Model:
+The main objective is to predict the 'overall_rating' based on the content of 'review_text'. Two types of LSTM architectures are implemented:
 
-#2. Treinamento:
+Unidirectional LSTM
+Bidirectional LSTM
+For both architectures, variations with different dropout rates (0.0, 0.25, 0.5) are implemented to prevent overfitting.
 
-Antes de dar início ao processo de treinamento, revisei os hiperparâmetros, como tammax e batch size. O script de treinamento conduziu experimentos para várias combinações, incluindo redes LSTM unidirecionais e bidirecionais, além de diferentes taxas de dropout.
+Hyperparameters:
 
-Executei o script de treinamento para cada configuração e monitorei o erro no conjunto de validação após cada época para detectar sinais de sobreajuste.
+Maximum sequence length: 795
+Batch size: 32
+Vocabulary size: 20,000
+How to Use:
+The provided code includes necessary imports, data loading, preprocessing steps, model creation, and training routines. To reproduce the results:
 
-#3. Validação:
+Ensure that all the required libraries (like TensorFlow, Keras, pandas, etc.) are installed.
+Load the B2W-Reviews01.csv file.
+Follow the provided code for preprocessing and model creation.
+Train the model using the specified hyperparameters.
+Validate the model on the validation set and test on the test set for final performance metrics.
+Results:
+Results from the LSTM models are stored as checkpoints for the best-performing model based on validation loss. The models and their architectures are saved as '.h5' files and '.png' image files respectively.
 
-A validação foi efetuada após cada conjunto de cinco épocas de treinamento. O script produziu gráficos de validação para cada configuração e armazenou os parâmetros do modelo.
-
-#4. Teste:
-
-Após a conclusão das etapas de treinamento e validação, carreguei o modelo que apresentou a melhor acurácia de validação e avaliei sua performance no conjunto de teste. O resultado destacado foi a acurácia do modelo nesse conjunto.
-
-Instruções executadas:
-
-1. Executei o script de pré-processamento:
-```css
-python preprocess.py --data_path=B2W-Reviews01.csv
-```
-2. Iniciei o script de treinamento:
-```arduino
-python train.py --config=config_file_path
-```
-3. Finalmente, rodei o script de teste:
-```css
-python test.py --model_path=best_model_True_0.25.h5
-```
-
-
+Author:
+Ricardo Cabral Penteado
+NUSP: 13813331
 #Resultados:
 O MELHOR MODELO identificado pode ser visualizado na imagem model_True_0 25.
 
