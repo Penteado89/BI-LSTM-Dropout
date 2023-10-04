@@ -102,6 +102,7 @@ Metrics associated with the trained model:
 ![test accuracy](https://github.com/Penteado89/BI-LSTM-Dropout/assets/80430113/4cee7a42-8280-4bb6-806a-9ed71f9e3e6b)
 
 A confusion matrix provides an easy-to-understand visualization of the model's predictions versus actual classifications. Alongside, the classification report provides a detailed breakdown of precision, recall, and F1-score for each class.
+
               precision    recall  f1-score   support
 
            0       0.75      0.89      0.81      6424
@@ -109,10 +110,11 @@ A confusion matrix provides an easy-to-understand visualization of the model's p
            2       0.42      0.41      0.42      3965
            3       0.44      0.48      0.46      8046
            4       0.67      0.68      0.68     11843
-
     accuracy                           0.60     32275
-   macro avg       0.54      0.50      0.48     32275
-weighted avg       0.58      0.60      0.58     32275
+    macro avg       0.54      0.50      0.48     32275
+    weighted avg       0.58      0.60      0.58     32275
+
+
 
 Conclusions:
 The Bidirectional LSTM with a dropout rate of 25% achieved the best validation loss and performed reasonably well on the test set. Still, there is room for improvement in terms of model architecture, hyperparameter tuning, and additional preprocessing steps.
