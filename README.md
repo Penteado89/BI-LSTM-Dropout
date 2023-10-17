@@ -1,4 +1,4 @@
-# EP01 - MAC5725 – Linguística Computacional – 2023 - BI-LSTM-Dropout
+# MAC5725 – Linguística Computacional – 2023 - EP 1: RNNs Bidirecionais, Overfitting, Underfitting
 
 Sentiment Analysis on B2W Reviews with LSTMs
 This repository provides code to conduct a sentiment analysis on reviews from B2W using Long Short-Term Memory networks (LSTMs). LSTMs are a type of recurrent neural network designed to work with sequence prediction problems.
