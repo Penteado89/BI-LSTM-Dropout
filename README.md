@@ -1,5 +1,72 @@
 # MAC5725 – Linguística Computacional – 2023 - EP 1: RNNs Bidirecionais, Overfitting, Underfitting
 
+
+Pré-requisitos
+Google Colab: A execução deste projeto requer o uso do Google Colab. Certifique-se de ter uma conta Google para acessar esta ferramenta.
+
+Google Drive: Este projeto requer o uso do Google Drive para armazenar e acessar os dados e os embeddings necessários. Certifique-se de ter espaço suficiente disponível no seu Drive.
+
+Preparação dos Dados
+Upload dos Arquivos: Faça o upload dos seguintes arquivos para a pasta content/ no seu Google Drive montado no Google Colab:
+
+B2W-Reviews01.csv
+requirements.txt
+preprocessing.py (para uso da função 'clean_text')
+Download e Upload do Embedding:
+
+Faça o download do arquivo de embeddings a partir do seguinte link: glove_s300.zip
+Após o download, faça o upload do arquivo glove_s300.zip para a pasta content/ no seu Google Drive montado no Google Colab.
+Instalação das Dependências
+Abra o notebook notebook.ipynb no Google Colab.
+Execute a célula que contém o comando !pip install -r requirements.txt para instalar todas as dependências necessárias.
+Execução do Projeto
+Pré-processamento:
+
+Execute a célula correspondente no notebook para realizar o pré-processamento dos dados.
+Treinamento:
+
+Execute as células correspondentes para treinar o modelo com os dados pré-processados.
+Teste:
+
+Finalmente, execute as células de teste para avaliar o desempenho do modelo.
+Informações Adicionais
+Os embeddings foram obtidos do NILC (Núcleo Interinstitucional de Linguística Computacional).
+Os dados utilizados neste projeto são avaliações de produtos da B2W.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------
 Sentiment Analysis on B2W Reviews with LSTMs
 This repository provides code to conduct a sentiment analysis on reviews from B2W using Long Short-Term Memory networks (LSTMs). LSTMs are a type of recurrent neural network designed to work with sequence prediction problems.
 
