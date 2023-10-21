@@ -16,7 +16,7 @@ Upload dos Arquivos: Faça o upload dos seguintes arquivos para a pasta 'content
 
 3. preprocessing.py
 
-## Download e upload do embedding
+## Download e upload de embeddings treinados
 
 Faça o download do arquivo de embeddings a partir do seguinte link: glove_s300.zip
 Após o download, faça o upload do arquivo glove_s300.zip para a pasta 'content/' no seu Google Drive montado no Google Colab.
