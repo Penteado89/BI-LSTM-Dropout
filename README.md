@@ -39,7 +39,7 @@ Para ambas as arquiteturas, foram implementadas variações com diferentes taxas
 
 ## Instalação das dependências
 
-Abra o notebook EP01_MAC5725_–_Linguística_Computacional_–_2023(versão final).ipynb no Google Colab.
+Abra o notebook EP01_MAC5725_–_Linguística_Computacional_–_2023(versão_final).ipynb no Google Colab.
 Execute a célula que contém o comando !pip install -r requirements.txt para instalar todas as dependências necessárias.
 
 
