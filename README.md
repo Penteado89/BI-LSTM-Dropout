@@ -44,21 +44,22 @@ Execute a célula que contém o comando !pip install -r requirements.txt para in
 
 
 # Execução do projeto
-## Pré-processamento:
+## Pré-processamento
 
 Execute a célula correspondente no notebook para realizar o pré-processamento dos dados.
 
-## Treinamento:
+## Treinamento
 
 Execute as células correspondentes para treinar o modelo com os dados pré-processados.
 
-## Teste:
+## Teste
 
 Finalmente, execute as células de teste para avaliar o desempenho do modelo.
 
 
 ## Informações adicionais
 Os embeddings foram obtidos do NILC (Núcleo Interinstitucional de Linguística Computacional).
+
 Os dados utilizados neste projeto são avaliações de produtos da B2W.
 
 Autor: Ricardo Cabral Penteado
